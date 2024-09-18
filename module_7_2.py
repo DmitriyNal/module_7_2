@@ -7,7 +7,9 @@ def custom_write(file_name, strings):#
             cursor = file.tell()# получаем позицию в файле
             file.write(string + '\n')# записываем строку в файл
             strings_positions[(i,cursor)] = string# сохраняем позицию строки в словаре
+
         return strings_positions
+    file.close()
 
 
 
